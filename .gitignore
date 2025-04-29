@@ -1,9 +1,47 @@
-# Python
+# Python specific
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Firebase credentials and config files
+*firebase-adminsdk*.json
+startup-cf3fd-firebase-adminsdk-fbsvc-*.json
+# Specific service account file
+startup-cf3fd-firebase-adminsdk-fbsvc-893409a921.json
+
+# Environment files
+.env
+.env.*
+.venv
+env/
+
+# Log files
+*.log
+logs/
+log/
+
+# Distribution / packaging
+.Python
+env/
 build/
 develop-eggs/
 dist/
@@ -20,30 +58,25 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-env/
-ENV/
-
-# IDE
+# IDE specific files
 .idea/
 .vscode/
 *.swp
 *.swo
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Firebase
-firebase-adminsdk.json
-*-firebase-adminsdk-*.json
-
-# Logs
-*.log
-logs/
-
-# System
+*~
 .DS_Store
-Thumbs.db 
+
+# Backup files
+*.bak
+*.backup
+
+# Local development
+.python-version
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+.coverage.*
+
+# Exception: Keep these files
+!requirements.txt 
