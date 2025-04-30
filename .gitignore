@@ -1,4 +1,4 @@
-# Python specific
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -22,22 +22,29 @@ var/
 .installed.cfg
 *.egg
 
-# Firebase credentials and config files
-*firebase-adminsdk*.json
-startup-cf3fd-firebase-adminsdk-fbsvc-*.json
-# Specific service account file
-startup-cf3fd-firebase-adminsdk-fbsvc-893409a921.json
-
-# Environment files
+# Environment variables
 .env
-.env.*
-.venv
-env/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Log files
+# Firebase
+startup-cf3fd-firebase-adminsdk-*.json
+*firebase-adminsdk*.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
 *.log
-logs/
-log/
+
+# Docker
+.docker/
+docker-compose.override.yml
 
 # Distribution / packaging
 .Python
@@ -57,14 +64,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# IDE specific files
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-.DS_Store
 
 # Backup files
 *.bak
